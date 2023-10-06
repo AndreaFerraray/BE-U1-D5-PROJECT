@@ -6,10 +6,11 @@ import java.util.Scanner;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Reproducible[] mediaList = new Reproducible[5];
-
+        mediaList[4] = new AudioRecording("Audio 1", 2, 2, 2);
         mediaList[0] = new AudioRecording("Audio 1", 3, 2, 5);
         mediaList[1] = new Video("Video 1", 4, 3, 3);
         mediaList[2] = new Image("Immagine 1", 5);
+        mediaList[3] = new Image("Immagine 1", 5);
 
         int choice;
         do {
