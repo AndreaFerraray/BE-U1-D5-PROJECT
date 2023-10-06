@@ -11,3 +11,4 @@ abstract class Media {
 
     public abstract void show();
 }
+

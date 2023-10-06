@@ -9,3 +9,36 @@ class AudioRecording extends Media implements Reproducible {
         this.volume = volume;
         this.duration = duration;
     };
+
+    @Override
+    public boolean isReproducible() {
+        return true;
+    }
+
+    @Override
+    public int getDuration() {
+        return duration;
+    }
+
+    public void abbassaVolume() {
+        if (volume > 0) {
+            volume--;
+        }
+    }
+
+    public void alzaVolume() {
+        volume++;
+    }
+
+    @Override
+    public void play() {
+        for (int i = 0; i < duration; i++) {
+            System.out.println(title + " " + "!".repeat(volume));
+        }
+    }
+
+    @Override
+    public void show() {
+
+    }
+}
